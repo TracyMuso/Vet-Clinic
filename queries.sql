@@ -52,7 +52,7 @@ RIGHT JOIN owners ON animals.owner_id = owners.id;
 SELECT species.name, COUNT(animals.species_id) FROM animals
 JOIN species ON species.id = animals.species_id GROUP BY species.name;
 
-SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Jennifer Orwell' AND animals.species_id = 2; 
+SELECT animals.name FROM animals JOIN owners ON owners.id = animals.owner_id JOIN species on species.id = animals.species_id WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'pokemon'; 
 
 SELECT animals.name FROM animals JOIN owners ON owners.id = animals.owner_id WHERE animals.escape_attempts = 0 AND owners.full_name = 'Dean Winchester';
 
