@@ -13,12 +13,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
-## Calculator App
-
-> This is my simple bookstore app. This can be used to add, edit and remove books. There is a section that allows one to update their progress and a form to add more books by category.
-
-![](https://img.shields.io/badge/Microverse-blueviolet).
-
 
 ## Built With
 
